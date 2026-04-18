@@ -1,0 +1,262 @@
+:root{
+    --color-slate-700:rgb(49, 65, 88);
+}
+
+.primary-text{
+    color: #7F22FE;
+}
+
+.grey-text{
+    color: #6A7282;
+}
+
+.dark-grey-text{
+    color: #4A5565;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.home{
+    background-image:linear-gradient(rgba(77, 23, 154, 0.8),rgba(77, 23, 153, 0.8)), url(../photos/hero-bg-img.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-primary{
+    background-color: #861FFD;
+}
+
+.btn-primary:hover{
+    background-color: #7307E5;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .nav-link::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: width .3s;
+    background-color:#7c3aed;
+}
+
+.navbar-nav .nav-link.active{
+    color: #7c3aed;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #7c3aed;
+}
+
+.navbar-nav .nav-link.active::before{
+    width: 100%;
+}
+
+
+.navbar-nav .nav-link:hover::before{
+    width: 100%;
+
+}
+.nav-link {
+    font-weight: 500;
+    color: var(--color-slate-700);
+}
+
+.home .title-hero{
+    font-size: 60px;
+    font-weight: 700;
+}
+.home .description-hero{
+    font-size: 20px;
+    font-weight: 400;
+    color: #E5E7EB;
+    max-width: 670px;
+}
+
+.form-container label{
+    color: #364153;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.form-container .location .fa-location-dot{
+    left: 4px;
+    top: 29%;
+    color: #99A1AF;
+}
+
+.form-container .form-control{
+    padding: .375rem 1.75rem;
+}
+
+input::placeholder {
+  color: #99A1AF !important;
+  font-size: 1.2em;
+}
+
+
+header .blocks .number{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+header .blocks .text{
+    color: #DDD6FF;
+}
+
+
+.section-header{
+    width: fit-content;
+    color: #7008E7;
+    font-size: 12px;
+    font-weight: 700;
+     background-color: #F6F4FF;
+     border: 2px solid #DDD6FF;
+     padding: 8px 20px;
+     border-radius: 20px;
+     text-transform: uppercase;
+     position: relative;
+}
+.section-header::before{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent , #7008E7);
+    position: absolute;
+    right: 100%;
+    margin-right: 10px;
+    top: 50%;
+}
+.section-header::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #7008E7 , transparent );
+    position: absolute;
+    left: 100%;
+    margin-left: 10px;
+    top: 50%;
+}
+
+.section-item{
+    font-size: 48px;
+    font-weight: 900;
+    background-image: linear-gradient(90deg,#7008E7 60% ,#FA9800 );
+    color: #7008E7;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.section-desc{
+    max-width: 42rem;
+    color: #4A5565;
+}
+.premium-collection .card .card-img {
+    height: 256px;
+    overflow: hidden;
+}
+.premium-collection .card .card-img img{
+    transition: 0.3s;
+}
+
+.premium-collection .card:hover .card-img img {
+    transform: scale(1.1);
+}
+.premium-collection .card .card-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.premium-collection .card .card-img .overlay .icon{
+    background-color: #EAEDEE;
+    color: #4A5565;
+}
+
+.premium-collection .card .card-img .overlay .icon:hover{
+    color: #FB2C36;
+}
+.premium-collection .card .card-body .footer-img{
+    width: 40px;
+    height: 40px;
+}
+
+.premium-collection .card .card-body .btn-card{
+    color: #7F22FE;
+    background-color: #EDE9FE;
+    border: 2px solid transparent;
+    
+}
+.premium-collection .card .card-body .btn-card:hover{
+    background-color: #DDD6FF;
+    border:2px  solid #7F22FE;
+}
+
+.badge-purple{
+    background-color: #7F22FE;
+}
+
+.badge-green{
+    background-color: #00A63E;
+}
+
+.badge-orange{
+    background-color: #E17100;
+}
+
+.badge-black{
+    background-color:rgba(0, 0, 0, 0.704);
+}
+.testimonials{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(90deg,#4D1799 ,#59168C );
+}
+
+.nav-pills{
+    border-bottom: 1px solid #EDEFF2;
+}
+
+.nav-pills .nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-pills .nav-link.active{
+    color: #974CFE;
+    background-color: #F5F3FF;
+    border-bottom: 2px solid #974CFE;
+}
+
+.nav-pills .nav-link:hover{
+    color: #974CFE;
+    background-color: #F5F3FF;
+    border-bottom: 2px solid #C4B4FF;
+}
+
+.services .services-card .card-icon{
+    color: #974CFE;
+    background-color: #EDE9FE;
+}
+
+.services .card-bottom {
+    left: -3%;
+    bottom: -10%;
+}
